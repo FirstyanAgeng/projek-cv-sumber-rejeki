@@ -54,7 +54,7 @@
                         </div><!-- header end -->
 
                         <div class="entry-content">
-                            <p>{{ Str::limit($blog->content, 300) }}</p>
+                            <p>{!! Str::limit($blog->content, 300) !!}</p>
                         </div>
 
                         <div class="post-footer">
@@ -83,7 +83,7 @@
                             @foreach($latest_blog as $latest)
                             <li class="d-flex align-items-center">
                                 <div class="posts-thumb">
-                                    <a href="#"><img loading="lazy" alt="img" src="image/{{ $latest->image_1 }}"></a>
+                                    <a href="#"><img loading="lazy" alt="img" src="/image/{{ $latest->image_1 }}"></a>
                                 </div>
                                 <div class="post-info">
                                     <h4 class="entry-title">

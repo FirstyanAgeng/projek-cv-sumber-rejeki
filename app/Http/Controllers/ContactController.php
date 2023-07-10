@@ -69,9 +69,23 @@ class ContactController extends Controller
         $input = $request->all();
 
 
-        $input['logo'] = $request->file('logo')->store('assets/images', 'public');
+        if ($image = $request->file('image')) {
+            $destinationPath = 'image/';
+            $imageName = $image->hashName();
+            $image->move($destinationPath, $imageName);
+            $input['image'] = $imageName;
+        } else {
+            unset($input['image']);
+        }
 
-        $input['image'] = $request->file('image')->store('assets/images', 'public');
+        if ($logo = $request->file('logo')) {
+            $destinationPath = 'image/';
+            $logoName = $logo->hashName();
+            $logo->move($destinationPath, $logoName);
+            $input['logo'] = $logoName;
+        } else {
+            unset($input['logo']);
+        }
 
 
         $contact->update($input);

@@ -16,8 +16,8 @@
         <div class="row">
             <div class="col-4">
 
-                <img src="{{ asset('storage/'. $contact->image) }}" class="img-fluid shadow-sm"
-                    style="border-radius: 14px;" id="imgPrev">
+                <img src="/image/{{ $contact->image }}" class="img-fluid shadow-sm" style="border-radius: 14px;"
+                    id="imgPrev">
                 <div class="mt-3">
                     <div class="alert alert-warning d-flex align-items-center" role="alert">
                         <div>
@@ -25,8 +25,8 @@
                         </div>
                     </div>
                 </div>
-                <img src="{{ asset('storage/'. $contact->logo) }}" class="img-fluid shadow-sm"
-                    style="border-radius: 14px;" id="imgLogo">
+                <img src="/image/{{ $contact->logo }}" class="img-fluid shadow-sm" style="border-radius: 14px;"
+                    id="imgLogo">
             </div>
 
             <div class="col-8">

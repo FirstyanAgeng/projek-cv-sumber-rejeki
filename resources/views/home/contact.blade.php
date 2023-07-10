@@ -9,12 +9,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="banner-heading">
-                        <h1 class="banner-title">Contact</h1>
+                        <h1 class="banner-title">Kontak</h1>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb justify-content-center">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">Company</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Contact Us</li>
+                                <li class="breadcrumb-item"><a href="#">Beranda</a></li>
+                                <li class="breadcrumb-item"><a href="#">KOntak</a></li>
                             </ol>
                         </nav>
                     </div>
@@ -75,7 +74,7 @@
 
         </div><!-- 1st row end -->
         <div class="gap-60"></div>
-        <img src="" alt="">
+        <img src="/image/{{ $contact->image }}" alt="" class="img-fluid" style="width: 100%">
         <div class="gap-40"></div>
 
         <div class="gap-60"></div>

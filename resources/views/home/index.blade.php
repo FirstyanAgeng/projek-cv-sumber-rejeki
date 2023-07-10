@@ -68,12 +68,15 @@
                                 alt="service-icon" />
                         </div>
                         <div class="ts-service-info">
-                            <h3 class="service-box-title"><a href="service-single.html">Zero Harm Everyday</a>
+                            <h3 class="service-box-title"><a href="service-single.html">KONSTRUKSI UMUM</a>
                             </h3>
-                            <p>You have ideas, goals, and dreams. We have a culturally diverse, forward thinking
-                                team looking for talent like. Lorem ipsum dolor suscipit.</p>
-                            <a class="learn-more d-inline-block" href="service-single.html"
-                                aria-label="service-details"><i class="fa fa-caret-right"></i> Learn more</a>
+                            <p style="text-align: justify">
+                                Membangun keseluruhan bangunan yang terdiri dari bagian-bagian struktur. Misal,
+                                Konstruksi Struktur Bangunan adalah bentuk/bangun secara keseluruhan dari struktur
+                                bangunan, atau Konstruksi Jalan Raya, Konstruksi Jembatan, Konstruksi Pelabuhan Udara
+                                dan Laut , dan lain lain.
+                            </p>
+
                         </div>
                     </div>
                 </div><!-- Service1 end -->
@@ -91,12 +94,15 @@
                                 alt="service-icon" />
                         </div>
                         <div class="ts-service-info">
-                            <h3 class="service-box-title"><a href="service-single.html">Virtual Construction</a>
+                            <h3 class="service-box-title"><a href="service-single.html">KONSULTAN PENGAWAS</a>
                             </h3>
-                            <p>You have ideas, goals, and dreams. We have a culturally diverse, forward thinking
-                                team looking for talent like. Lorem ipsum dolor suscipit.</p>
-                            <a class="learn-more d-inline-block" href="service-single.html"
-                                aria-label="service-details"><i class="fa fa-caret-right"></i> Learn more</a>
+                            <p style="text-align: justify">
+                                Bertanggung jawab mengawasi dan memastikan pelaksanaan proyek konstruksi berjalan sesuai
+                                dengan perencanaan, spesifikasi, peraturan, dan standar yang telah ditetapkan. Bertujuan
+                                untuk memastikan bahwa proyek konstruksi berjalan lancar,
+                                sesuai dengan jadwal, anggaran, dan kualitas yang diharapkan.
+                            </p>
+
                         </div>
                     </div>
                 </div><!-- Service2 end -->
@@ -114,11 +120,13 @@
                                 alt="service-icon" />
                         </div>
                         <div class="ts-service-info">
-                            <h3 class="service-box-title"><a href="service-single.html">Build To Last</a></h3>
-                            <p>You have ideas, goals, and dreams. We have a culturally diverse, forward thinking
-                                team looking for talent like. Lorem ipsum dolor suscipit.</p>
-                            <a class="learn-more d-inline-block" href="service-single.html"
-                                aria-label="service-details"><i class="fa fa-caret-right"></i> Learn more</a>
+                            <h3 class="service-box-title"><a href="service-single.html">DESAIN INTERIOR</a></h3>
+                            <p style="text-align: justify">Penuangan ide dan gagasan atas pelaksanaan pekerjaan yang
+                                sifatnya perubahan suasana
+                                bagian dalam bangunan (rumah, kantor, dll.). Dengan memperhatikan atas fungsi ruangan,
+                                serta kemampuan keuangan menuju tampilan/suasana ruangan yang lebih hidup dan berkarya
+                                citra seni.</p>
+
                         </div>
                     </div>
                 </div><!-- Service3 end -->
@@ -194,7 +202,7 @@
             <div class="col-lg-4">
                 <div class="ts-service-box d-flex">
                     <div class="ts-service-box-img">
-                        <img loading="lazy" src="{{ asset('fe-2/images/icon-image/service-ic')}}on1.png"
+                        <img loading="lazy" src="{{ asset('fe-2/images/icon-image/service-icon1.png')}}"
                             alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
@@ -205,7 +213,7 @@
 
                 <div class="ts-service-box d-flex">
                     <div class="ts-service-box-img">
-                        <img loading="lazy" src="{{ asset('fe-2/images/icon-image/service-ic')}}on2.png"
+                        <img loading="lazy" src="{{ asset('fe-2/images/icon-image/service-icon2.png')}}"
                             alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
@@ -216,7 +224,7 @@
 
                 <div class="ts-service-box d-flex">
                     <div class="ts-service-box-img">
-                        <img loading="lazy" src="{{ asset('fe-2/images/icon-image/service-ic')}}on3.png"
+                        <img loading="lazy" src="{{ asset('fe-2/images/icon-image/service-icon3.png')}}"
                             alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">

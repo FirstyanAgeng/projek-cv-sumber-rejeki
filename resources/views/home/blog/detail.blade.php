@@ -94,31 +94,22 @@
 
                 <div class="sidebar sidebar-right">
                     <div class="widget recent-posts">
-                        <h3 class="widget-title">Recent Posts</h3>
+                        <h3 class="widget-title">Berita Terkini</h3>
                         <ul class="list-unstyled">
+                            @foreach($latest_blog as $latest)
                             <li class="d-flex align-items-center">
                                 <div class="posts-thumb">
-                                    <a href="#"><img loading="lazy" alt="img" src="images/news/news1.jpg"></a>
+                                    <a href="#"><img loading="lazy" alt="img" src="/image/{{ $latest->image_1 }}"></a>
                                 </div>
                                 <div class="post-info">
                                     <h4 class="entry-title">
-                                        <a href="#">We Just Completes $17.6 Million Medical Clinic In Mid-missouri</a>
+                                        <a href="/blog/detail/{{ $latest->slug }}">{{ $latest->title }}</a>
                                     </h4>
                                 </div>
                             </li><!-- 1st post end-->
+                            @endforeach
 
-                            <li class="d-flex align-items-center">
-                                <div class="posts-thumb">
-                                    <a href="#"><img loading="lazy" alt="img" src="images/news/news2.jpg"></a>
-                                </div>
-                                <div class="post-info">
-                                    <h4 class="entry-title">
-                                        <a href="#">Thandler Airport Water Reclamation Facility Expansion Project
-                                            Named</a>
-                                    </h4>
-                                </div>
-                            </li><!-- 2nd post end-->
-
+                            {{--
                             <li class="d-flex align-items-center">
                                 <div class="posts-thumb">
                                     <a href="#"><img loading="lazy" alt="img" src="images/news/news3.jpg"></a>
@@ -128,7 +119,7 @@
                                         <a href="#">Silicon Bench And Cornike Begin Construction Solar Facilities</a>
                                     </h4>
                                 </div>
-                            </li><!-- 3rd post end-->
+                            </li><!-- 3rd post end--> --}}
 
                         </ul>
 

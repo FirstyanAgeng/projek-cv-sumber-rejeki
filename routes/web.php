@@ -43,6 +43,7 @@ Route::get('/contractor', [HomeController::class, 'contractor']);
 Route::get('/contractor/detail/{contractor:slug}', [HomeController::class, 'detail_contractor']);
 
 Route::get('/trade', [HomeController::class, 'trade']);
+Route::get('/trade/detail/{trade:slug}', [HomeController::class, 'detail_trade']);
 Route::get('/portfolio', [HomeController::class, 'portfolio']);
 Route::get('/portofolio/detail/{portofolio:slug}', [HomeController::class, 'detail_portfolio']);
 Route::get('/blog', [HomeController::class, 'blog']);

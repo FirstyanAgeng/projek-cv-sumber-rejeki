@@ -85,7 +85,8 @@ class HomeController extends Controller
     }
     public function detail_blog(Blog $blog)
     {
-        return view('home.blog.detail', ['active' => 'blog'], compact('blog'));
+        $latest_blog = Blog::latest()->paginate(3);
+        return view('home.blog.detail', ['active' => 'blog'], compact('blog', 'latest_blog'));
     }
 
     public function contact()

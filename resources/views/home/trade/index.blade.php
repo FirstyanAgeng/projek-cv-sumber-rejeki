@@ -9,12 +9,11 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="banner-heading">
-                        <h1 class="banner-title">Service</h1>
+                        <h1 class="banner-title">Perdagangan Umum</h1>
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb justify-content-center">
-                                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                                <li class="breadcrumb-item"><a href="#">Services</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">All Services</li>
+                                <li class="breadcrumb-item"><a href="#">Layanan</a></li>
+                                <li class="breadcrumb-item"><a href="#">Perdagangan Umum</a></li>
                             </ol>
                         </nav>
                     </div>

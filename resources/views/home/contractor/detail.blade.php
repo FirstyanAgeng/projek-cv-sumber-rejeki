@@ -72,11 +72,7 @@
                     <div class="row">
                         <div class="col-md-12">
                             <p>{!! $contractor->description !!}</p>
-                            <p>Nam scelerisque tristique dolor vitae tincidunt. Aenean quis massa uada mi elementum
-                                elementum. , nec
-                                tincidunt nunc posuere ut. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Nulla commodo
-                                iaculis ligula, ac dapibus quam ornare ut. Praesent ac hendrerit sem, et tempus sem</p>
+
                         </div><!-- col end -->
                     </div><!-- 1st row end-->
 
@@ -95,27 +91,13 @@
 
                     <div class="row">
                         <div class="col-md-6">
-                            <h3 class="column-title-small">What Makes Us Different</h3>
 
-                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad
-                                squid. 3 wolf
-                                moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt
-                                laborum eiusmod.
-                                Consectetur adipiscing elit. Integer adipiscing erat eget risus sollicitudin
-                                pellentesque et non erat
-                                tincidunt nunc posuere.</p>
-                            <ul class="list-arrow">
-                                <li>Partnership Strategy tristique eleifend.</li>
-                                <li>Opporutnity to work with amet elit a.</li>
-                                <li>Saving Time to Deal with commodo iaculis.</li>
-                                <li>Leadership skills to manage erat volutpat.</li>
-                                <li>Cut cost without sacrificing dolore magna.</li>
-                                <li>Automate your business elis tristique.</li>
-                            </ul>
+                            <p>{!! $contractor->detail !!}</p>
+
                         </div>
 
                         <div class="col-md-6 mt-5 mt-md-0">
-                            <h3 class="column-title-small">You Should Know</h3>
+                            <h3 class="column-title-small">Yang Perlu Diketahui</h3>
 
                             <div class="accordion accordion-group accordion-classic" id="construction-accordion">
                                 <div class="card">
@@ -124,7 +106,8 @@
                                             <button class="btn btn-block text-left" type="button" data-toggle="collapse"
                                                 data-target="#collapseOne" aria-expanded="true"
                                                 aria-controls="collapseOne">
-                                                Does the law require head protection on construction sites?
+                                                Apakah SOP mengharuskan penggunaan helm pengaman (safety helmet) di
+                                                lokasi konstruksi?
                                             </button>
                                         </h2>
                                     </div>
@@ -132,10 +115,12 @@
                                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
                                         data-parent="#construction-accordion">
                                         <div class="card-body">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-                                            richardson ad squid. 3
-                                            wolf
-                                            moon officia aute, non cupidata
+                                            Ya, Di Dalam SOP (Standar Operasional Prosedur) mengharuskan penggunaan helm
+                                            pengaman (safety helmet) di lokasi konstruksi. Helm pengaman merupakan
+                                            bagian penting dari upaya untuk menjaga keselamatan dan kesehatan para
+                                            pekerja di industri konstruksi. Tujuannya adalah melindungi pekerja dari
+                                            cedera kepala yang dapat disebabkan oleh benda jatuh, tumbukan, atau
+                                            benturan lainnya di lokasi konstruksi.
                                         </div>
                                     </div>
                                 </div>
@@ -145,23 +130,24 @@
                                             <button class="btn btn-block text-left collapsed" type="button"
                                                 data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
                                                 aria-controls="collapseTwo">
-                                                What are the first aid requirements for sites?
+                                                Apa persyaratan pertolongan pertama untuk lokasi/area kerja?
                                             </button>
                                         </h2>
                                     </div>
                                     <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
                                         data-parent="#construction-accordion">
                                         <div class="card-body">
-                                            Anemi nim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                                            ex ea com modo
-                                            consequat.
-                                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
-                                            eu fugiat nulla
-                                            pariatur.
-                                            Excepteur sint occaecat cupid henderit in voluptate velit esse cillu oris
-                                            nisi ut aliquip ex ea
-                                            com
-                                            matat.
+                                            Persyaratan pertolongan pertama untuk lokasi/area kerja meliputi beberapa
+                                            hal. Pertama, lokasi kerja harus dilengkapi dengan kotak pertolongan pertama
+                                            yang terisi peralatan yang memadai. Kedua, setidaknya satu atau beberapa
+                                            anggota tim di lokasi kerja harus memiliki pelatihan pertolongan pertama
+                                            yang memadai. Ketiga, pemberitahuan tentang lokasi kotak pertolongan pertama
+                                            dan nomor darurat harus ditempatkan dengan jelas. Keempat, pihak pengelola
+                                            atau pemilik proyek harus melakukan evaluasi risiko dan mengembangkan
+                                            rencana penanganan darurat. Terakhir, pemantauan kesehatan dan pencatatan
+                                            kejadian kecelakaan juga harus dilakukan di lokasi kerja. Memastikan
+                                            pemenuhan persyaratan pertolongan pertama merupakan bagian penting dalam
+                                            menjaga keselamatan dan kesejahteraan di lingkungan kerja.
                                         </div>
                                     </div>
                                 </div>
@@ -171,20 +157,17 @@
                                             <button class="btn btn-block text-left collapsed" type="button"
                                                 data-toggle="collapse" data-target="#collapseThree"
                                                 aria-expanded="false" aria-controls="collapseThree">
-                                                What is an appointed person?
+                                                Apa Itu Pengawas Konstruksi?
                                             </button>
                                         </h2>
                                     </div>
                                     <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
                                         data-parent="#construction-accordion">
                                         <div class="card-body">
-                                            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                            Lorem Ipsum has been
-                                            the
-                                            industry’s standard dummy text ever since the 1500s, when an unknown printer
-                                            took a galley of type
-                                            and
-                                            scrambled it to make a type specimen book.
+                                            Merupakan seseorang yang ditunjuk untuk mengawasi pelaksanaan proyek
+                                            konstruksi, memeriksa kualitas pekerjaan, memastikan kepatuhan terhadap
+                                            standar dan spesifikasi, serta memonitor keselamatan kerja di lokasi
+                                            konstruksi.
                                         </div>
                                     </div>
                                 </div>
@@ -200,12 +183,12 @@
                         <div class="row align-items-center">
                             <div class="col-md-8 text-center text-md-left">
                                 <div class="call-to-action-text">
-                                    <h3 class="action-title">Interested with this service.</h3>
+                                    <h3 class="action-title">Tertarik dengan Layanan ini?</h3>
                                 </div>
                             </div><!-- Col end -->
                             <div class="col-md-4 text-center text-md-right mt-3 mt-md-0">
                                 <div class="call-to-action-btn">
-                                    <a class="btn btn-primary" href="#">Get a Quote</a>
+                                    <a class="btn btn-primary" href="{{ url('contact') }}">Kontak Kami</a>
                                 </div>
                             </div><!-- col end -->
                         </div><!-- row end -->
