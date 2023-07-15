@@ -79,7 +79,9 @@ class HomeController extends Controller
 
     public function blog()
     {
-        $blogs = Blog::latest()->paginate(5);
+        $blogs = Blog::with('author:id,name')->latest()->paginate(3);
+        // dd($blogs);
+        // $blogs = Blog::latest()->paginate(5);
         $latest_blog = Blog::latest()->paginate(3);
         return view('home.blog.index', ['active' => 'blog'], compact('blogs', 'latest_blog'));
     }

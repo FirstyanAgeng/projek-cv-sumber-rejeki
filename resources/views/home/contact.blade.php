@@ -28,8 +28,8 @@
 
         <div class="row text-center">
             <div class="col-12">
-                <h2 class="section-title">Reaching our Office</h2>
-                <h3 class="section-sub-title">Find Our Location</h3>
+                <h2 class="section-title">Kunjungi Kantor Kami</h2>
+                <h3 class="section-sub-title">Temukan Lokasi Kami</h3>
             </div>
         </div>
         <!--/ Title row end -->
@@ -41,7 +41,7 @@
                         <i class="fas fa-map-marker-alt mr-0"></i>
                     </span>
                     <div class="ts-service-box-content">
-                        <h4>Visit Our Office</h4>
+                        <h4>Alamat Kantor</h4>
                         <p>{{ $contact->alamat }}</p>
                     </div>
                 </div>
@@ -54,8 +54,8 @@
                         <i class="fa fa-envelope mr-0"></i>
                     </span>
                     <div class="ts-service-box-content">
-                        <h4>Email Us</h4>
-                        <p>o{{ $contact->email }}</p>
+                        <h4>Email Kami</h4>
+                        <p>{{ $contact->email }}</p>
                     </div>
                 </div>
             </div><!-- Col 2 end -->
@@ -66,7 +66,7 @@
                         <i class="fa fa-phone-square mr-0"></i>
                     </span>
                     <div class="ts-service-box-content">
-                        <h4>Call Us</h4>
+                        <h4>Kontak Kami</h4>
                         <p>{{ $contact->telepon_1 }} / {{ $contact->telepon_2 }}</p>
                     </div>
                 </div>

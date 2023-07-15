@@ -137,47 +137,50 @@
 
 
 
+
 <section id="facts" class="facts-area dark-bg">
     <div class="container">
         <div class="facts-wrapper">
             <div class="row">
                 <div class="col-md-3 col-sm-6 ts-facts">
                     <div class="ts-facts-img">
-                        <img loading="lazy" src="{{ asset('fe-2/images/icon-image/fact1.png')}}" alt="facts-img">
+                        <img loading="lazy" src="{{ asset('fe-2/images/icon-image/fact1.png') }}" alt="facts-img">
                     </div>
                     <div class="ts-facts-content">
-                        <h2 class="ts-facts-num"><span class="counterUp" data-count="1789">0</span></h2>
-                        <h3 class="ts-facts-title">Total Projects</h3>
+                        <h2 class="ts-facts-num"><span class="counterUp" data-count="70">0</span></h2>
+                        <h3 class="ts-facts-title">Total Projek</h3>
                     </div>
                 </div><!-- Col end -->
 
                 <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-sm-0">
                     <div class="ts-facts-img">
-                        <img loading="lazy" src="{{ asset('fe-2/images/icon-image/fact2.png')}}" alt="facts-img">
+                        <img loading="lazy" src="{{ asset('fe-2/images/icon-image/fact2.png') }}" alt="facts-img">
                     </div>
                     <div class="ts-facts-content">
-                        <h2 class="ts-facts-num"><span class="counterUp" data-count="647">0</span></h2>
-                        <h3 class="ts-facts-title">Staff Members</h3>
+                        <h2 class="ts-facts-num"><span class="counterUp" data-count="50">0</span></h2>
+                        <h3 class="ts-facts-title">
+                            Anggota Staff</h3>
                     </div>
                 </div><!-- Col end -->
 
                 <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
                     <div class="ts-facts-img">
-                        <img loading="lazy" src="{{ asset('fe-2/images/icon-image/fact3.png')}}" alt="facts-img">
+                        <img loading="lazy" src="{{ asset('fe-2/images/icon-image/fact3.png') }}" alt="facts-img">
                     </div>
                     <div class="ts-facts-content">
-                        <h2 class="ts-facts-num"><span class="counterUp" data-count="4000">0</span></h2>
-                        <h3 class="ts-facts-title">Hours of Work</h3>
+                        <h2 class="ts-facts-num"><span class="counterUp" data-count="3000">0</span></h2>
+                        <h3 class="ts-facts-title">Jam Kerja</h3>
                     </div>
                 </div><!-- Col end -->
 
                 <div class="col-md-3 col-sm-6 ts-facts mt-5 mt-md-0">
                     <div class="ts-facts-img">
-                        <img loading="lazy" src="{{ asset('fe-2/images/icon-image/fact4.png')}}" alt="facts-img">
+                        <img loading="lazy" src="{{ asset('fe-2/images/icon-image/fact4.png') }}" alt="facts-img">
                     </div>
                     <div class="ts-facts-content">
-                        <h2 class="ts-facts-num"><span class="counterUp" data-count="44">0</span></h2>
-                        <h3 class="ts-facts-title">Countries Experience</h3>
+                        <h2 class="ts-facts-num"><span class="counterUp" data-count="40">0</span></h2>
+                        <h3 class="ts-facts-title">
+                            Lokasi</h3>
                     </div>
                 </div><!-- Col end -->
 
@@ -192,8 +195,8 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-12">
-                <h2 class="section-title">We Are Specialists In</h2>
-                <h3 class="section-sub-title">What We Do</h3>
+                <h2 class="section-title">Kami merupakan spesialis dalam</h2>
+                <h3 class="section-sub-title">Bidang yang kami lakukan</h3>
             </div>
         </div>
         <!--/ Title row end -->
@@ -206,8 +209,11 @@
                             alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                        <h3 class="service-box-title"><a href="#">Home Construction</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                        <h3 class="service-box-title">Konstruksi Umum</h3>
+                        <p>
+                            Kami memberikan solusi inovatif dan berkualitas tinggi untuk proyek
+                            konstruksi Anda. Bersama kami, visi Anda akan diwujudkan dengan presisi dan ketepatan,
+                            membangun masa depan yang solid dan berkelanjutan.</p>
                     </div>
                 </div><!-- Service 1 end -->
 

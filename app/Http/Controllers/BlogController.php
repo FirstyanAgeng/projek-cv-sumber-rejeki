@@ -6,6 +6,7 @@ use App\Models\Blog;
 use Illuminate\Support\Str;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class BlogController extends Controller
 {
@@ -37,20 +38,31 @@ class BlogController extends Controller
             'content' => 'required',
             'image_1' => 'required|image'
         ]);
+        // $input = $request->all();
 
-        $input = $request->all();
-
-        $input['slug'] = Str::slug($request->title);
+        $user = Auth::user();
+        $blog = new Blog;
+        $blog->title = $request->title;
+        $blog->subtitle = $request->subtitle;
+        $blog->content = $request->content;
+        $blog->kategori = $request->kategori;
 
         if ($image = $request->file('image_1')) {
             $destinationPath = 'image/';
             $imageName = $image->hashName();
             $image->move($destinationPath, $imageName);
-            $input['image_1'] = $imageName;
+            $request->image_1 = $imageName;
         }
 
-        Blog::create($input);
+        $blog->image_1 = $request->image_1;
+        $blog->slug = Str::slug($request->title);
+        $blog->user_id = $user->id;
 
+
+
+
+        $blog->save();
+        // Blog::create($input);
         return redirect('/admin/blog')->with('message', 'Data berhasil ditambahkan');
     }
 

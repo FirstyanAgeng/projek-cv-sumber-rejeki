@@ -39,6 +39,9 @@
                     <div class="post-body">
                         <div class="entry-header">
                             <div class="post-meta">
+                                <span class="post-author">
+                                    <i class="far fa-user"></i><a href="#"> {{ $blog->author->name }}</a>
+                                </span>
                                 <span class="post-cat">
                                     <i class="far fa-folder-open"></i><a href="#"> {{ $blog->subtitle }}</a>
                                 </span>

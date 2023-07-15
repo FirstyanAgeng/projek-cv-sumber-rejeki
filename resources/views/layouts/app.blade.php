@@ -226,6 +226,17 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </p>
                             </a>
                             <ul class="nav nav-treeview">
+                                @hasrole('superadmin')
+                                <li class="nav-item">
+                                    <a href="{{ url('user') }}"
+                                        class="nav-link {{ $active == 'users' ? 'active' : '' }}">
+                                        <i class="far fa-circle nav-icon"></i>
+                                        <p>Data Admin</p>
+                                    </a>
+                                </li>
+                                @endhasrole
+
+
                                 <li class="nav-item">
                                     <a href="{{ url('admin/sliders') }}"
                                         class="nav-link {{ $active == 'slider' ? 'active' : '' }}">
@@ -233,6 +244,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                         <p>Data Banner</p>
                                     </a>
                                 </li>
+
                                 <li class="nav-item">
                                     <a href="{{ url('admin/contractor') }}"
                                         class="nav-link {{ $active == 'contractor' ? 'active' : '' }}">
@@ -247,6 +259,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                         <p>Data Perdagangan</p>
                                     </a>
                                 </li>
+
+                                @hasrole('admin')
                                 <li class="nav-item">
                                     <a href="{{ url('admin/testimonial') }}"
                                         class="nav-link {{ $active == 'testimoni' ? 'active' : '' }}">
@@ -254,6 +268,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                         <p>Data Testimoni</p>
                                     </a>
                                 </li>
+                                @endhasrole
+
                                 <li class="nav-item">
                                     <a href="{{ url('admin/portofolio') }}"
                                         class="nav-link {{ $active == 'portofolio' ? 'active' : '' }}">
@@ -261,6 +277,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                         <p>Data Portofolio</p>
                                     </a>
                                 </li>
+
+                                @hasrole('superadmin')
                                 <li class="nav-item">
                                     <a href="{{ url('admin/team') }}"
                                         class="nav-link {{ $active == 'team' ? 'active' : '' }}">
@@ -268,6 +286,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                         <p>Data Pengurus</p>
                                     </a>
                                 </li>
+                                @endhasrole
+
                                 <li class="nav-item">
                                     <a href="{{ url('admin/client') }}"
                                         class="nav-link {{ $active == 'client' ? 'active' : '' }}">
@@ -297,6 +317,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </p>
                             </a>
                         </li>
+                        @hasrole('superadmin')
                         <li class="nav-item">
                             <a href="{{ url('admin/about') }}"
                                 class="nav-link {{ $active == 'about' ? 'active' : '' }}">
@@ -306,6 +327,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </p>
                             </a>
                         </li>
+                        @endhasrole
+
+                        @hasrole('admin')
                         <li class="nav-item">
                             <a href="{{ url('admin/contact') }}"
                                 class="nav-link {{ $active == 'contact' ? 'active' : '' }}">
@@ -316,6 +340,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                                 </p>
                             </a>
                         </li>
+                        @endhasrole
                         <li class="nav-item">
                             <a href="{{ url('logout') }}" class="nav-link">
                                 <i class="nav-icon fas fa-arrow-left"></i>

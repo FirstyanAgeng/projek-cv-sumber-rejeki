@@ -338,10 +338,12 @@
                         <div class="col-lg-4 col-md-6 footer-widget mt-5 mt-md-0">
                             <h3 class="widget-title">Jam Operasional</h3>
                             <div class="working-hours">
-                                We work 7 days a week, every day excluding major holidays. Contact us if you have an
-                                emergency, with our
-                                Hotline and Contact form.
-                                <br><br> Senin - Jumat: <span class="text-right">10:00 - 16:00 </span>
+                                <p style="text-align: justify"> Kami bekerja selama 7 hari dalam seminggu, setiap hari
+                                    kecuali hari libur besar. Hubungi
+                                    kami jika Anda memiliki keadaan darurat melalui Hotline dan Form Kontak. Kami siap
+                                    membantu Anda dengan cepat dan responsif.</p>
+
+                                <br>Senin - Jumat: <span class="text-right">10:00 - 16:00 </span>
                                 <br> Sabtu: <span class="text-right">12:00 - 15:00</span>
                                 <br> Minggu dan Hari Libur: <span class="text-right">09:00 - 12:00</span>
                             </div>
@@ -350,11 +352,8 @@
                         <div class="col-lg-3 col-md-6 mt-5 mt-lg-0 footer-widget">
                             <h3 class="widget-title">Layanan</h3>
                             <ul class="list-arrow">
-                                <li><a href="service-single.html">Pre-Construction</a></li>
-                                <li><a href="service-single.html">General Contracting</a></li>
-                                <li><a href="service-single.html">Construction Management</a></li>
-                                <li><a href="service-single.html">Design and Build</a></li>
-                                <li><a href="service-single.html">Self-Perform Construction</a></li>
+                                <li><a href="{{ url('contractor') }}">Konstruksi</a></li>
+                                <li><a href="{{ url('trade') }}">Perdagangan Umum</a></li>
                             </ul>
                         </div><!-- Col end -->
                     </div><!-- Row end -->

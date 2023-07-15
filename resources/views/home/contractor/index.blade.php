@@ -34,8 +34,8 @@
                         <img loading="lazy" src="image/{{ $contractor->image }}" alt="service-image">
                     </div>
                     <div class="ts-service-info">
-                        <h3 class="service-box-title"><a href="service-single.html">{{ $contractor->name }}</a></h3>
-                        <p>{!! Str::limit($contractor->description, 20) !!}</p>
+                        <h3 class="service-box-title">{{ $contractor->name }}</h3>
+                        <p>{!! Str::limit($contractor->description, 50) !!}</p>
                         <a class="learn-more d-inline-block" href="contractor/detail/{{ $contractor->slug }}"
                             aria-label="service-details"><i class="fa fa-caret-right"></i> Selengkapnya</a>
                     </div>

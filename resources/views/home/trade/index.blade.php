@@ -33,8 +33,8 @@
                         <img loading="lazy" src="image/{{ $trade->image }}" alt="service-image">
                     </div>
                     <div class="ts-service-info">
-                        <h3 class="service-box-title"><a href="service-single.html">{{ $trade->name }}</a></h3>
-                        <p>{!! Str::limit($trade->description, 20) !!}</p>
+                        <h3 class="service-box-title">{{ $trade->name }}</h3>
+                        <p>{!! Str::limit($trade->description, 50) !!}</p>
                         <a class="learn-more d-inline-block" href="trade/detail/{{ $trade->slug }}"
                             aria-label="service-details"><i class="fa fa-caret-right"></i> Selengkapnya</a>
                     </div>

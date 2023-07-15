@@ -5,7 +5,20 @@
 <div class="container">
     <a href="{{ url('/admin/client') }}" class="btn btn-primary">kembali</a>
     <div class="row">
-        <div class="col-md-12">
+        <div class="col-6">
+            <img src="/image/{{ $client->image }}" class="img-fluid shadow-sm" style="border-radius: 14px;"
+                id="imgPrev">
+            <div class="mt-3">
+                <div class="alert alert-warning d-flex align-items-center" role="alert">
+                    <div>
+                        Images are only JPG and PNG and the Max Size is 2 MB
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-6">
+
             <form action="{{ route('client.update', $client->id) }}" method="POST" enctype="multipart/form-data">
                 @method('PUT')
                 @csrf
@@ -16,7 +29,7 @@
                 @error('title')
                 <small style="color: red">{{ $message }}</small>
                 @enderror
-                <img src="/image/{{ $client->image }}" alt="" class="img-fuid" width="300" height="300">
+
                 <div class="form-group">
                     <label for="">Gambar</label>
                     <input type="file" class="form-control" name="image">
@@ -28,5 +41,6 @@
             </form>
         </div>
     </div>
+
 </div>
 @endsection

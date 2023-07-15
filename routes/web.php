@@ -14,6 +14,7 @@ use App\Http\Controllers\SliderController;
 use App\Http\Controllers\TeamController;
 use App\Http\Controllers\TestimonialController;
 use App\Http\Controllers\TradeController;
+use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -81,3 +82,5 @@ Route::prefix('/admin')->middleware('auth')->group(function () {
     Route::get('about', [AboutController::class, 'index']);
     Route::put('about/{id}', [AboutController::class, 'update']);
 });
+
+Route::resource('user', UserController::class)->middleware('role:superadmin');

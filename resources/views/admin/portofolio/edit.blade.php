@@ -64,32 +64,31 @@
                 <small style="color: red">{{ $message }}</small>
                 @enderror
 
-                <div class="form-group">
-                    <label for="">Deskripsi</label>
-                    <textarea name="description" class="form-control" id="" cols="30"
-                        rows="10">{{ $portofolio->description }}</textarea>
-                </div>
-                @error('description')
-                <small style="color: red">{{ $message }}</small>
-                @enderror
-
-
-                <div class="form-group">
-                    <label for="">Detail</label>
-                    <textarea name="detail" class="form-control" cols="30"
-                        rows="10">{{ $portofolio->detail }}</textarea>
-                </div>
-                @error('detail')
-                <small style="color: red">{{ $message }}</small>
-                @enderror
 
 
 
-                <button type="submit" class="btn btn-primary">Simpan</button>
-                <a href="{{ url('admin/portofolio') }}" class="btn btn-danger">Batal</a>
             </div>
-
         </div>
+        <div class="form-group">
+            <label for="">Deskripsi</label>
+            <textarea name="description" class="form-control" id="content" cols="30"
+                rows="10">{{ $portofolio->description }}</textarea>
+        </div>
+        @error('description')
+        <small style="color: red">{{ $message }}</small>
+        @enderror
+
+
+        <div class="form-group">
+            <label for="">Detail</label>
+            <textarea name="detail" class="form-control" cols="30" rows="10">{{ $portofolio->detail }}</textarea>
+        </div>
+        @error('detail')
+        <small style="color: red">{{ $message }}</small>
+        @enderror
+
+        <button type="submit" class="btn btn-primary">Simpan</button>
+        <a href="{{ url('admin/portofolio') }}" class="btn btn-danger">Batal</a>
     </form>
 
 </div>
