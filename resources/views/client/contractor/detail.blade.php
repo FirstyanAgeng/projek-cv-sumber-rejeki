@@ -1,9 +1,9 @@
 @extends('layouts.home')
 
-@section('title', $contractor->title)
+@section('title', $contractor->name)
 
 @section('content')
-<div id="banner-area" class="banner-area" style="background-image:url({{ asset('fe-2/images/banner/banner1.jpg') }})">
+<div id="banner-area" class="banner-area" style="background-image:url({{ asset('fe-2/images/banner/banner2.jpg') }})">
     <div class="banner-text">
         <div class="container">
             <div class="row">

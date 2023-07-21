@@ -68,7 +68,7 @@
                                 alt="service-icon" />
                         </div>
                         <div class="ts-service-info">
-                            <h3 class="service-box-title"><a href="service-single.html">KONSTRUKSI UMUM</a>
+                            <h3 class="service-box-title">KONSTRUKSI UMUM
                             </h3>
                             <p style="text-align: justify">
                                 Membangun keseluruhan bangunan yang terdiri dari bagian-bagian struktur. Misal,
@@ -94,7 +94,7 @@
                                 alt="service-icon" />
                         </div>
                         <div class="ts-service-info">
-                            <h3 class="service-box-title"><a href="service-single.html">KONSULTAN PENGAWAS</a>
+                            <h3 class="service-box-title">KONSULTAN PENGAWAS
                             </h3>
                             <p style="text-align: justify">
                                 Bertanggung jawab mengawasi dan memastikan pelaksanaan proyek konstruksi berjalan sesuai
@@ -223,21 +223,26 @@
                             alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                        <h3 class="service-box-title"><a href="#">Building Remodels</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                        <h3 class="service-box-title">Pembangunan Gedung</h3>
+                        <p>proses konstruksi fisik untuk mendirikan bangunan baru. Proses ini mencakup serangkaian
+                            langkah yang melibatkan perencanaan, desain, pembangunan, dan penyelesaian sebuah gedung
+                            sesuai dengan spesifikasi yang telah ditentukan. </p>
                     </div>
                 </div><!-- Service 2 end -->
 
-                <div class="ts-service-box d-flex">
+                {{-- <div class="ts-service-box d-flex">
                     <div class="ts-service-box-img">
                         <img loading="lazy" src="{{ asset('fe-2/images/icon-image/service-icon3.png')}}"
                             alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                        <h3 class="service-box-title"><a href="#">Interior Design</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                        <h3 class="service-box-title">Desain Interior</h3>
+                        <p>Proses perancangan ruang dalam bangunan atau lingkungan untuk menciptakan lingkungan
+                            fungsional, estetis, dan nyaman. Desainer interior bertanggung jawab menciptakan ruang
+                            sesuai kebutuhan dan preferensi klien dengan mempertimbangkan elemen desain seperti warna,
+                            tekstur, pencahayaan, dan bahan.</p>
                     </div>
-                </div><!-- Service 3 end -->
+                </div><!-- Service 3 end --> --}}
 
             </div><!-- Col end -->
 
@@ -247,16 +252,18 @@
             </div><!-- Col end -->
 
             <div class="col-lg-4 mt-5 mt-lg-0 mb-4 mb-lg-0">
-                <div class="ts-service-box d-flex">
+                {{-- <div class="ts-service-box d-flex">
                     <div class="ts-service-box-img">
                         <img loading="lazy" src="{{ asset('fe-2/images/icon-image/service-icon4.png')}}"
                             alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                        <h3 class="service-box-title"><a href="#">Exterior Design</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                        <h3 class="service-box-title">Desain Eksterior</h3>
+                        <p> proses perancangan dan penataan elemen-elemen visual di luar bangunan atau lingkungan untuk
+                            menciptakan tampilan fisik dan estetika yang menarik dan sesuai dengan tujuan dan identitas
+                            bangunan tersebut.</p>
                     </div>
-                </div><!-- Service 4 end -->
+                </div><!-- Service 4 end --> --}}
 
                 <div class="ts-service-box d-flex">
                     <div class="ts-service-box-img">
@@ -264,8 +271,11 @@
                             alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                        <h3 class="service-box-title"><a href="#">Renovation</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                        <h3 class="service-box-title"><a href="#">Rehabilitasi Bangunan</a></h3>
+                        <p>
+                            Rehabilitasi bangunan adalah proses perbaikan dan pemulihan bangunan rusak agar dapat
+                            digunakan kembali dengan efisien dan aman. Tujuannya adalah memperpanjang usia bangunan,
+                            mengembalikan fungsionalitasnya, dan menjaga nilai historis atau arsitekturalnya.</p>
                     </div>
                 </div><!-- Service 5 end -->
 
@@ -275,8 +285,11 @@
                             alt="service-icon">
                     </div>
                     <div class="ts-service-box-info">
-                        <h3 class="service-box-title"><a href="#">Safety Management</a></h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Integer adipiscing erat</p>
+                        <h3 class="service-box-title"><a href="#">Manajemen Keselamatan</a></h3>
+                        <p>
+                            Manajemen keselamatan berfokus pada penerapan strategi dan prosedur untuk menjaga tempat
+                            kerja atau kegiatan bebas dari risiko dan aman. Tujuannya adalah melindungi kesehatan dan
+                            keselamatan pekerja, pengunjung, dan orang lain yang terlibat.</p>
                     </div>
                 </div><!-- Service 6 end -->
             </div><!-- Col end -->
@@ -290,8 +303,8 @@
     <div class="container">
         <div class="row text-center">
             <div class="col-lg-12">
-                <h2 class="section-title">Work of Excellence</h2>
-                <h3 class="section-sub-title">Recent Projects</h3>
+                <h2 class="section-title">Karya Unggulan</h2>
+                <h3 class="section-sub-title">Projek Terbaru Kami</h3>
             </div>
         </div>
         <!--/ Title row end -->
@@ -300,26 +313,25 @@
             <div class="col-12">
                 <div class="shuffle-btn-group">
                     <label class="active" for="all">
-                        <input type="radio" name="shuffle-filter" id="all" value="all" checked="checked">Show
-                        All
+                        <input type="radio" name="shuffle-filter" id="all" value="all" checked="checked">
+                        Semua
                     </label>
 
                     <label for="government">
-                        <input type="radio" name="shuffle-filter" id="government" value="government">Government
+                        <input type="radio" name="shuffle-filter" id="government" value="government">Pemerintah
                     </label>
                     <label for="infrastructure">
                         <input type="radio" name="shuffle-filter" id="infrastructure"
-                            value="infrastructure">Infrastructure
+                            value="infrastructure">Infrastruktur
                     </label>
                     <label for="residential">
-                        <input type="radio" name="shuffle-filter" id="residential" value="residential">Residential
+                        <input type="radio" name="shuffle-filter" id="residential" value="residential">Perumahan
                     </label>
                     <label for="healthcare">
-                        <input type="radio" name="shuffle-filter" id="healthcare" value="healthcare">Healthcare
+                        <input type="radio" name="shuffle-filter" id="healthcare" value="healthcare">Kesehatan
                     </label>
 
                 </div><!-- project filter end -->
-
 
                 <div class="row shuffle-wrapper">
                     <div class="col-1 shuffle-sizer"></div>
@@ -327,13 +339,14 @@
                     <div class="col-lg-4 col-md-6 shuffle-item" data-groups="[&quot;{{ $portofolio->category }}&quot;]">
                         <div class="project-img-container">
                             <a class="gallery-popup" href="/image/{{ $portofolio->image }}" aria-label="project-img">
-                                <img class="img-fluid" src="/image/{{ $portofolio->image }}" alt="project-img">
+                                <img class="img-fluid" width="400" height="400" src="/image/{{ $portofolio->image }}"
+                                    alt="project-img">
                                 <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                             </a>
                             <div class="project-item-info">
                                 <div class="project-item-info-content">
                                     <h3 class="project-item-title">
-                                        <a href="projects-single.html">{{ $portofolio->title }}</a>
+                                        <a href="portofolio/detail/{{ $portofolio->slug }}">{{ $portofolio->title }}</a>
                                     </h3>
                                     <p class="project-cat">{{ $portofolio->category }}</p>
                                 </div>
@@ -425,7 +438,7 @@
 
             <div class="col-12">
                 <div class="general-btn text-center">
-                    <a class="btn btn-primary" href="projects.html">View All Projects</a>
+                    <a class="btn btn-primary" href="projects.html">Selengkapnya</a>
                 </div>
             </div>
 
@@ -460,49 +473,6 @@
                     </div>
                     <!--/ Item 1 end -->
                     @endforeach
-                    {{-- <div class="item">
-                        <div class="quote-item">
-                            <span class="quote-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                inci done idunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitoa
-                                tion ullamco laboris
-                                nisi aliquip consequat.
-                            </span>
-
-                            <div class="quote-item-footer">
-                                <img loading="lazy" class="testimonial-thumb"
-                                    src="{{ asset('fe-2/images/clients/testimonial2.png') }}" alt="testimonial">
-                                <div class="quote-item-info">
-                                    <h3 class="quote-author">Weldon Cash</h3>
-                                    <span class="quote-subtext">CFO, First Choice</span>
-                                </div>
-                            </div>
-                        </div><!-- Quote item end -->
-                    </div> --}}
-                    <!--/ Item 2 end -->
-
-                    {{-- <div class="item">
-                        <div class="quote-item">
-                            <span class="quote-text">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-                                inci done idunt ut
-                                labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitoa
-                                tion ullamco laboris
-                                nisi ut commodo consequat.
-                            </span>
-
-                            <div class="quote-item-footer">
-                                <img loading="lazy" class="testimonial-thumb"
-                                    src="{{ asset('fe-2/images/clients/testimonial3.png') }}" alt="testimonial">
-                                <div class="quote-item-info">
-                                    <h3 class="quote-author">Minter Puchan</h3>
-                                    <span class="quote-subtext">Director, AKT</span>
-                                </div>
-                            </div>
-                        </div><!-- Quote item end -->
-                    </div> --}}
-                    <!--/ Item 3 end -->
 
                 </div>
                 <!--/ Testimonial carousel end-->
@@ -627,27 +597,7 @@
             </div><!-- 2nd post col end -->
             @endforeach
 
-            {{-- <div class="col-lg-4 col-md-6 mb-4">
-                <div class="latest-post">
-                    <div class="latest-post-media">
-                        <a href="news-single.html" class="latest-post-img">
-                            <img loading="lazy" class="img-fluid" src="{{ asset('fe-2/images/news/news3.jpg') }}"
-                                alt="img">
-                        </a>
-                    </div>
-                    <div class="post-body">
-                        <h4 class="post-title">
-                            <a href="news-single.html" class="d-inline-block">Silicon Bench and Cornike Begin
-                                Construction Solar Facilities</a>
-                        </h4>
-                        <div class="latest-post-meta">
-                            <span class="post-item-date">
-                                <i class="fa fa-clock-o"></i> Aug 13, 2017
-                            </span>
-                        </div>
-                    </div>
-                </div><!-- Latest post end -->
-            </div><!-- 3rd post col end --> --}}
+
         </div>
         <!--/ Content row end -->
 

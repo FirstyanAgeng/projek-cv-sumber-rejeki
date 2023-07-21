@@ -58,9 +58,6 @@ class BlogController extends Controller
         $blog->slug = Str::slug($request->title);
         $blog->user_id = $user->id;
 
-
-
-
         $blog->save();
         // Blog::create($input);
         return redirect('/admin/blog')->with('message', 'Data berhasil ditambahkan');

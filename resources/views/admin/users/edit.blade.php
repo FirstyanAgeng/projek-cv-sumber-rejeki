@@ -25,6 +25,14 @@
                 <small style="color: red">{{ $message }}</small>
                 @enderror
 
+                {{-- <div class="form-group">
+                    <label for="">Password</label>
+                    <input type="password" class="form-control" name="password" value="{{ bcrypt($user->password) }}">
+                </div>
+                @error('password')
+                <small style="color: red">{{ $message }}</small>
+                @enderror --}}
+
                 <button type="submit" class="btn btn-primary">Simpan</button>
                 <a href="{{ url('/user') }}" class="btn btn-danger">Batal</a>
             </form>

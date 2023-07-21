@@ -4,7 +4,7 @@
 
 @section('content')
 <!-- header -->
-<div id="banner-area" class="banner-area" style="background-image:url({{ asset('fe-2/images/banner/banner1.jpg') }})">
+<div id="banner-area" class="banner-area" style="background-image:url({{ asset('fe-2/images/banner/banner2.jpg') }})">
     <div class="banner-text">
         <div class="container">
             <div class="row">
@@ -61,7 +61,8 @@
                         data-groups="[&quot;government&quot;,&quot;healthcare&quot;]">
                         <div class="project-img-container">
                             <a class="gallery-popup" href="image/{{ $portofolio->image }}">
-                                <img class="img-fluid" src="image/{{ $portofolio->image }}" alt="project-image">
+                                <img class="img-fluid" width="400" height="400" src="image/{{ $portofolio->image }}"
+                                    alt="project-image">
                                 <span class="gallery-icon"><i class="fa fa-plus"></i></span>
                             </a>
                             <div class="project-item-info">

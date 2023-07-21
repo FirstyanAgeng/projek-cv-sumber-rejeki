@@ -3,7 +3,7 @@
 @section('title', 'Kontak')
 
 @section('content')
-<div id="banner-area" class="banner-area" style="background-image:url({{ asset('fe-2/images/banner/banner1.jpg') }})">
+<div id="banner-area" class="banner-area" style="background-image:url({{ asset('fe-2/images/banner/banner2.jpg') }})">
     <div class="banner-text">
         <div class="container">
             <div class="row">
@@ -72,12 +72,10 @@
                 </div>
             </div><!-- Col 3 end -->
 
-        </div><!-- 1st row end -->
-        <div class="gap-60"></div>
-        <img src="/image/{{ $contact->image }}" alt="" class="img-fluid" style="width: 100%">
-        <div class="gap-40"></div>
 
-        <div class="gap-60"></div>
+        </div><!-- 1st row end -->
+
+        <div class="gap-40"></div>
 
         <iframe src="https://www.google.com/maps/embed?pb={{ $contact->maps_embed }}" width="100%" height="400px"
             style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
@@ -86,7 +84,7 @@
 
         <div class="row">
             <div class="col-md-12">
-                <h3 class="column-title">We love to hear</h3>
+                <h3 class="column-title">Hubungi Kami</h3>
                 <!-- contact form works with formspree.io  -->
                 <!-- contact form activation doc: https://docs.themefisher.com/constra/contact-form/ -->
                 <form action="{{ route('inbox.send') }}" method="POST" role="form">
@@ -145,7 +143,7 @@
                     <div class="form-group">
                         <label>Message</label>
                         <textarea class="form-control form-control-message @error('message') is-invalid @enderror"
-                            id="exampleFormControlTextarea1" rows="3" name="message"></textarea>
+                            id="exampleFormControlTextarea1" rows="7" name="message"></textarea>
                         @error('message')
                         <span class="invalid-feedback" role="alert">
                             <strong>{{ $message }}</strong>
@@ -153,12 +151,20 @@
                         @enderror
                     </div>
                     <div class="text-right"><br>
-                        <button class="btn btn-primary solid blank" type="submit">Send Message</button>
+                        <button class="btn btn-primary solid blank" type="submit">Kirim Pesan</button>
                     </div>
                 </form>
             </div>
 
-        </div><!-- Content row -->
+        </div>
+
+
+
+        <div class="gap-60"></div>
+        {{-- <img src="/image/{{ $contact->image }}" alt="" class="img-fluid" style="width: 100%">
+        <div class="gap-40"></div> --}}
+
+
     </div><!-- Conatiner end -->
 </section><!-- Main container end -->
 <script>

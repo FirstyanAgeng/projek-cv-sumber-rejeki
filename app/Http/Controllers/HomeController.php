@@ -27,7 +27,7 @@ class HomeController extends Controller
         $blogs = Blog::latest()->paginate(3);
 
 
-        return view('home.index', ['active' => 'home'], compact(
+        return view('client.index', ['active' => 'home'], compact(
             'sliders',
             'about',
             'portofolios',
@@ -40,41 +40,41 @@ class HomeController extends Controller
     {
         $about = About::first();
         $teams = Team::all();
-        return view('home.about', ['active' => 'about'], compact('about', 'teams'));
+        return view('client.about', ['active' => 'about'], compact('about', 'teams'));
     }
 
     public function contractor()
     {
         $contractors = Contractor::latest()->paginate(9);
-        return view('home.contractor.index', ['active' => 'contractor'], compact('contractors'));
+        return view('client.contractor.index', ['active' => 'contractor'], compact('contractors'));
     }
 
     public function detail_contractor(Contractor $contractor)
     {
-        return view('home.contractor.detail', ['active' => 'contractor'], compact('contractor'));
+        return view('client.contractor.detail', ['active' => 'contractor'], compact('contractor'));
     }
 
 
     public function trade()
     {
         $trades = Trade::latest()->paginate(9);
-        return view('home.trade.index', ['active' => 'trade'], compact('trades'));
+        return view('client.trade.index', ['active' => 'trade'], compact('trades'));
     }
 
     public function detail_trade(Trade $trade)
     {
-        return view('home.trade.detail', ['active' => 'trade'], compact('trade'));
+        return view('client.trade.detail', ['active' => 'trade'], compact('trade'));
     }
 
 
     public function portfolio()
     {
         $portofolios = Portofolio::all();
-        return view('home.portofolio.index', ['active' => 'portfolio'], compact('portofolios'));
+        return view('client.portofolio.index', ['active' => 'portfolio'], compact('portofolios'));
     }
     public function detail_portfolio(Portofolio $portofolio)
     {
-        return view('home.portofolio.detail', ['active' => 'portfolio'], compact('portofolio'));
+        return view('client.portofolio.detail', ['active' => 'portfolio'], compact('portofolio'));
     }
 
     public function blog()
@@ -83,17 +83,17 @@ class HomeController extends Controller
         // dd($blogs);
         // $blogs = Blog::latest()->paginate(5);
         $latest_blog = Blog::latest()->paginate(3);
-        return view('home.blog.index', ['active' => 'blog'], compact('blogs', 'latest_blog'));
+        return view('client.blog.index', ['active' => 'blog'], compact('blogs', 'latest_blog'));
     }
     public function detail_blog(Blog $blog)
     {
         $latest_blog = Blog::latest()->paginate(3);
-        return view('home.blog.detail', ['active' => 'blog'], compact('blog', 'latest_blog'));
+        return view('client.blog.detail', ['active' => 'blog'], compact('blog', 'latest_blog'));
     }
 
     public function contact()
     {
         $contact = Contact::first();
-        return view('home.contact', ['active' => 'contact'], compact('contact'));
+        return view('client.contact', ['active' => 'contact'], compact('contact'));
     }
 }
